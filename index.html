@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -15,7 +18,7 @@
     <header class="bg-dark encabezado">
         <div class="titular">
             <img src="./images/codoacodo-min.png" alt="Logo codo a codo" class="logo">
-            <h4>Conf Bs As</h4>
+            <h1 class="texto">Conf Bs As</h1>
         </div>
         <nav class="navegacion">
             <ul>
@@ -28,7 +31,7 @@
         </nav>
         <div class="dropdown">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
-                Menú
+                <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="dropdown-menu">
                 <li><a href="#" class="dropdown-item">La conferencia</a></li>
@@ -40,17 +43,14 @@
         </div>
     </header>
     <main>
-        <!-- Inicio carrousel -->
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicators/dots -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
             </div>
 
-            <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/ba1-min.jpg" alt="Primer foto del carrousel" class="d-block w-100">
@@ -105,7 +105,6 @@
                 </div>
             </div>
 
-            <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -113,7 +112,6 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
-        <!-- Fin carrousel -->
         <section class="oradores">
             <div class="header-orador">
                 <p>CONOCE A LOS </p>
@@ -165,7 +163,7 @@
             <div class="container-foto">
                 <img src="./images/honolulu-min.jpg" alt="Foto de la playa de Honolulu">
             </div>
-            <div class="container-lg p-5 bg-secondary text-white">
+            <div class="container-lg p-5 bg-dark text-white">
                 <h3> Bs As - Octubre</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Provident eaque exercitationem magni vero dicta, maxime maiores consectetur.
@@ -192,7 +190,7 @@
                             <input type="text" class="form-control" placeholder="Apellido" name="apellido">
                         </div>
                     </div>
-                    <textarea class="form-control" rows="5" id="comment" name="text"
+                    <textarea class="form-control" rows="5" name="charla"
                         placeholder="Sobre qué quieres hablar?"></textarea>
                     <p class="text-secondary">Recuerda incluir un título para tu charla</p>
                     <div class="d-grid">
